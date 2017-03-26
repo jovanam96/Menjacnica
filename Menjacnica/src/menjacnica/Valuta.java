@@ -10,19 +10,25 @@ public class Valuta {
 		return naziv;
 	}
 	public void setNaziv(String naziv) {
-		this.naziv = naziv;
+		if(naziv!=null){
+			this.naziv = naziv;
+		}
 	}
 	public String getSkracenica() {
 		return skracenica;
 	}
 	public void setSkracenica(String skracenica) {
-		this.skracenica = skracenica;
+		if(skracenica!=null){
+			this.skracenica = skracenica;
+		}
 	}
 	public LinkedList<Kurs> getKursevi() {
 		return kursevi;
 	}
 	public void setKursevi(LinkedList<Kurs> kursevi) {
-		this.kursevi = kursevi;
+		if(kursevi!=null){
+			this.kursevi = kursevi;
+		}
 	}
 	@Override
 	public String toString() {

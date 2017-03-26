@@ -11,25 +11,33 @@ public class Kurs {
 		return datum;
 	}
 	public void setDatum(GregorianCalendar datum) {
-		this.datum = datum;
+		if(datum!=null){
+			this.datum = datum;
+		}
 	}
 	public double getProdajniKurs() {
 		return prodajniKurs;
 	}
 	public void setProdajniKurs(double prodajniKurs) {
-		this.prodajniKurs = prodajniKurs;
+		if(prodajniKurs!=0){
+			this.prodajniKurs = prodajniKurs;
+		}
 	}
 	public double getKupovniKurs() {
 		return kupovniKurs;
 	}
 	public void setKupovniKurs(double kupovniKurs) {
-		this.kupovniKurs = kupovniKurs;
+		if(kupovniKurs!=0){
+			this.kupovniKurs = kupovniKurs;
+		}
 	}
 	public double getSrednjiKurs() {
 		return srednjiKurs;
 	}
 	public void setSrednjiKurs(double srednjiKurs) {
-		this.srednjiKurs = srednjiKurs;
+		if(srednjiKurs!=0){
+			this.srednjiKurs = srednjiKurs;
+		}
 	}
 	@Override
 	public int hashCode() {
