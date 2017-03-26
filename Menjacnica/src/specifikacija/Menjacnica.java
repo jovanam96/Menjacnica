@@ -11,12 +11,10 @@ public class Menjacnica implements MenjacnicaInterfejs{
 
 	@Override
 	public void dodajKurs(String naziv, Kurs k) {
-		if(k!=null){
 		for (int i = 0; i < valute.size(); i++) {
 			if(valute.get(i).getNaziv().equals(naziv)) {
 				valute.get(i).getKursevi().add(k);
 			}
-		}
 		}
 	}
 
